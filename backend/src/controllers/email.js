@@ -1,5 +1,5 @@
-const { groqAiPromptGenerator } = require('../../lib/groqAI');
-const { mailSender } = require('../../lib/nodeMailer');
+const { groqAiPromptGenerator } = require('../lib/groqAI');
+const { mailSender } = require('../lib/nodeMailer');
 require('dotenv').config();
 
 const generateEmailBody = async (req, res) => {

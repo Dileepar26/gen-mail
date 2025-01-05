@@ -5,8 +5,8 @@ require('dotenv').config();
 const generateEmailBody = async (req, res) => {
     try {
         const { prompt } = req.body;
-        if (!prompt && prompt.length > 0) {
-            res.status(400).json({
+        if (!prompt && !prompt.length ) {
+            return res.status(400).json({
                 success: false,
                 message: 'please provide the prompt to generate mail body'
             })
@@ -35,7 +35,8 @@ const generateEmailBody = async (req, res) => {
 const sendMail = async (req, res) => {
     try {
         const { email, subject, emailBody } = req.body;
-        if (email.length > 0 && subject.length > 0 && emailBody.length > 0) {
+        // console.log(req.body)
+        if (!email.length && !subject.length && !emailBody.length) {
             return res.status(400).json({
                 success: false,
                 message: 'one of the field is missing'

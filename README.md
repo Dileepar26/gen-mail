@@ -5,9 +5,9 @@ Gen-Mail is a web application that allows users to generate email bodies using A
 ---
 
 ## 🌐 deployed URL & documentation URL
-frontend: [https://gen-mail-frontend.vercel.app](https://gen-mail-frontend.vercel.app).
-backend: [https://gen-mail-backend.onrender.com](https://gen-mail-backend.onrender.com).
-API documentation: [https://documenter.getpostman.com/view/25258547/2sAYJ9AJmJ](https://documenter.getpostman.com/view/25258547/2sAYJ9AJmJ).
+- frontend: [https://gen-mail-frontend.vercel.app](https://gen-mail-frontend.vercel.app).
+- backend: [https://gen-mail-backend.onrender.com](https://gen-mail-backend.onrender.com).
+- API documentation: [https://documenter.getpostman.com/view/25258547/2sAYJ9AJmJ](https://documenter.getpostman.com/view/25258547/2sAYJ9AJmJ).
 
 ---
 
@@ -81,12 +81,12 @@ project-root/
    EMAIL_USERNAME=your_email@gmail.com
    EMAIL_PASSWORD=your_app_password
    PORT=5000
-   GROQ_API_KEY=groq api key
+   GROQ_API_KEY=groq_api-key
    ```
 
    Example `.env` for Frontend:
    ```plaintext
-   REACT_APP_API_URL= backend url (http://localhost:5000)
+   REACT_APP_API_URL= backend_url(http://localhost:5000)
    ```
 
 4. Install dependencies:

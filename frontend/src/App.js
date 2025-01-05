@@ -12,7 +12,7 @@ function App() {
 
   const generateEmail = async () => {
     try {
-      console.log("dcbkdks",process.env.REACT_APP_URL, `${process.env.REACT_APP_URL}/api/generate-email-body`)
+      // console.log("dcbkdks",process.env.REACT_APP_URL, `${process.env.REACT_APP_URL}/api/generate-email-body`)
       const response = await axios.post(`${process.env.REACT_APP_URL}/api/generate-email-body`, { prompt });
       setEmailBody(response.data.data);
       setIsGenerated(true);
